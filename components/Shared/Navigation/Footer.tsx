@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="w-full grid lg:grid-cols-6 grid-cols-2 gap-10">
             <div className="w-full col-span-2  flex flex-col items-center lg:items-start justify-start gap-4">
               <Link href={"/"} className="h-[36px] w-[90px] relative">
-                <Image src={"/Assets/Logowhite.png"} alt="" fill />
+                <Image src={"/Assets/LogoWhite.png"} alt="" fill />
               </Link>
               <p className="text-black-secondary text-[14px] font-[500] lg:text-left text-center lg:w-[80%] w-full">
                 Build a modern and creative website with moonfo
