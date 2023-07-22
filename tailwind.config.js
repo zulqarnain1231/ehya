@@ -31,6 +31,7 @@ module.exports = {
         },
         black: {
           main: "#000000",
+          secondary: "#5A7184",
           off: "#0D2436",
         },
         gray: {
@@ -40,6 +41,7 @@ module.exports = {
         },
         red: {
           main: "#FF0000",
+          secondary: "#FC5A5A",
         },
       },
     },

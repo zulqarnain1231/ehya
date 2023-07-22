@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
-import ComponentWrapper from "./Wrappers/ComponentWrapper";
+import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Drawer from "@mui/material/Drawer";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
@@ -37,8 +37,8 @@ const Navabar = () => {
   return (
     <ComponentWrapper>
       <nav className="w-full h-[70px] flex items-center justify-between bg-transparent">
-        <Link href={"/"} className="h-[70px] w-[70px] relative">
-          <Image src={"/Assets/Logo.svg"} alt="" fill />
+        <Link href={"/"} className="h-[36px] w-[90px] relative">
+          <Image src={"/Assets/Logo.png"} alt="" fill />
         </Link>
         <div className="flex items-center justify-start gap-8">
           {menu.map((item: any, index: number) => {

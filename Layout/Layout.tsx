@@ -1,5 +1,5 @@
-import Footer from "@/components/Shared/Footer";
-import Navabar from "@/components/Shared/Navabar";
+import Footer from "@/components/Shared/Navigation/Footer";
+import Navabar from "@/components/Shared/Navigation/Navabar";
 import React from "react";
 
 interface Props {
