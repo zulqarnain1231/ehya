@@ -7,7 +7,10 @@ const AllComments = () => {
       <p className="text-[18px] text-black-off lg:text-left text-center font-bold">
         All Comments(3)
       </p>
-      <Comment />
+      <Comment isEditable replies />
+      {[1, 2].map((item: number) => {
+        return <Comment key={item} />;
+      })}
     </div>
   );
 };
