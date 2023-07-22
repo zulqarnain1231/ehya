@@ -1,7 +1,7 @@
 import React from "react";
 interface Props {
   children: React.ReactNode;
-  style?: String;
+  style?: string;
 }
 const ComponentWrapper: React.FC<Props> = ({ children, style }) => {
   return (
