@@ -1,4 +1,3 @@
-import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import Image from "next/image";
 import React from "react";
 import { MdVerified } from "react-icons/md";

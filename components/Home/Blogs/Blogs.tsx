@@ -1,51 +1,21 @@
-import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
-import Image from "next/image";
 import React from "react";
-import { MdVerified } from "react-icons/md";
+import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
+import BlogCard from "./BlogCard";
+import { BsArrowRight } from "react-icons/bs";
 
 const Blogs = () => {
   return (
     <ComponentWrapper style="py-10">
-      <div className="w-full h-full grid lg:grid-cols-3 md:grid-cols-2 gap-6">
-        <div className="w-full flex flex-col items-start justify-start shadow-xl rounded-[8px]">
-          <div className="w-full h-[250px] relative">
-            <Image src={"/Assets/Blogs/blog1.jpg"} alt="" fill />
-          </div>
-          <div className="w-full flex flex-col items-start justify-start gap-4 p-5">
-            <p className="text-black-off md:text-[26px] text-[20px] font-bold">
-              Future of Work
-            </p>
-            <p className="text-[18px] text-black-off font-[500]">
-              Majority of peole will work in jobs that don’t exist today.
-            </p>
-            <div className="w-full flex items-center justify-between">
-              <div className="flex items-center justify-start gap-2">
-                <div className="h-[40px] w-[40px] relative">
-                  <Image
-                    src={"/Assets/Blogs/user1.png"}
-                    className="rounded-full"
-                    alt=""
-                    fill
-                  />
-                </div>
-                <div className="flex flex-col items-start justify-center gap-1">
-                  <p className="text-[18px] text-black-off font-bold italic">
-                    Johanna Murray
-                  </p>
-                  <div className="flex items-center justify-start gap-2">
-                    <MdVerified className="text-green-500 h-[14px] w-[14px]" />
-                    <p className="text-[12px] font-[500] text-green-500 italic">
-                      Verified writer
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-black-off/80 text-[16px] font-bold italic">
-                02 May
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="w-full h-full grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: number) => {
+          return <BlogCard key={item} />;
+        })}
+      </div>
+      <div className="w-full flex items-center justify-center my-10">
+        <button className="h-[46px] w-[170px] flex items-center justify-center gap-2 text-brand-main text-[18px] font-semibold bg-transparent border-[2px] border-brand-main rounded-[10px]">
+          More articles
+          <BsArrowRight className="text-brand-main font-bold h-[20px] w-[20px]" />
+        </button>
       </div>
     </ComponentWrapper>
   );
