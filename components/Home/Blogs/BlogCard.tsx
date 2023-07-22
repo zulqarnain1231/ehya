@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdVerified } from "react-icons/md";
 
 const BlogCard = () => {
   return (
-    <div className="w-full flex flex-col items-start justify-start shadow-xl rounded-[8px]">
+    <Link
+      href={"/blogdetails"}
+      className="w-full flex flex-col items-start justify-start shadow-xl rounded-[8px]"
+    >
       <div className="w-full h-[250px] relative">
         <Image src={"/Assets/Blogs/blog1.jpg"} alt="" fill />
       </div>
@@ -42,7 +46,7 @@ const BlogCard = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
