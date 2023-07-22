@@ -1,7 +1,7 @@
 import React from "react";
 import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
 import Details from "./Details/Details";
-import LatestArticles from "./LatestArticles";
+import LatestArticles from "./LatestArticles/LatestArticles";
 
 const BlogDetails = () => {
   return (
