@@ -6,7 +6,7 @@ interface Props {
   placeHolder: string;
   type: string;
   state: any;
-  setState: any;
+  setState: (e: React.ChangeEvent<HTMLInputElement>) => void;
   isCompulsory?: boolean;
 }
 const TextInput: React.FC<Props> = ({
@@ -23,11 +23,12 @@ const TextInput: React.FC<Props> = ({
       <p className="text-black-secondary text-[16px] font-semibold">{title}:</p>
       <input
         type={type}
+        name={name}
         placeholder={placeHolder}
         value={state}
         onChange={setState}
         required={isCompulsory}
-        className="w-full h-[46px] text-[16px] text-black-secondary font-[500] placeholder:font-[400] border-[2px] border-black-secondary hover:border-brand-main focus:outline-none focus:border-brand-main p-3 rounded-[8px]"
+        className="w-full h-[50px] text-[16px] text-black-secondary font-[500] placeholder:font-[400] border-[2px] border-black-secondary hover:border-brand-main focus:outline-none focus:border-brand-main p-3 rounded-[8px]"
       />
     </div>
   );
