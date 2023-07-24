@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
     if (
       router.pathname == "/login" ||
       router.pathname == "/signup" ||
-      router.pathname == "/dashboard"
+      router.pathname.includes("/dashboard")
     ) {
       return false;
     } else return true;
