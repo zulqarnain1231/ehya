@@ -57,7 +57,7 @@ const Login = () => {
                 {`Don't have an account?`}
               </p>
               <Link
-                href={"/login"}
+                href={"/signup"}
                 className="font-[500] text-brand-main text-base"
               >
                 Register now
