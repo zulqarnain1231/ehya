@@ -31,7 +31,7 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
         <main className="w-full h-full font-inter">{children}</main>
       )}
       {userLayout && (
-        <div className="w-full h-full md:h-screen md:grid md:grid-cols-[320px,calc(100%-320px)] flex flex-col gap-6 md:gap-0 ">
+        <div className="w-full h-full md:h-screen md:grid md:grid-cols-[320px,calc(100%-320px)] flex flex-col">
           <SideBar />
           <main className="w-full h-full bg-[#F9F9F9] md:p-6 lg:p-10">
             {children}

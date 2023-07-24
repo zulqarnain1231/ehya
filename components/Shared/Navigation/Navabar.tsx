@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Drawer from "@mui/material/Drawer";
-import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { BiMenuAltRight } from "react-icons/bi";
 
